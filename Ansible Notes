@@ -10,15 +10,19 @@ sudo yum install ansible -y
 Description of a playbook:
 - - - 
 - name: sample book      #name of the playbook
-   hosts: ansible clients   #name of the host/hosts
-   become: true
+  hosts: ansible clients   #name of the host/hosts
+  become: true
         
-tasks:                               #task name
-     -  name: install httpd.   #installing apache if you want to
-         yum:
-              name: httpd           #name of what you are installing
-              state: latest               #which version
-     -  name: run httpd            #name of what you are going to run
-         service:
-             name: httpd             
-              state: started
+  tasks:                               #task name
+   - name: install httpd.   #installing apache if you want to
+     yum:
+       name: httpd           #name of what you are installing
+       state: latest               #which version
+   - name: run httpd            #name of what you are going to run
+     service:
+       name: httpd             
+       state: started
+   - name: create content            #creating content if you want to
+     copy:
+        content: "welcome"
+        dest: /varsdwuhquwhdui        #destination
