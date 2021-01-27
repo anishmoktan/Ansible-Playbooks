@@ -26,3 +26,6 @@ Description of a playbook:
      copy:
         content: "welcome"
         dest: /varsdwuhquwhdui        #destination
+
+To check the syntax of a playbook: ansible-playbook "name of the playbook" - - syntax-check
+
