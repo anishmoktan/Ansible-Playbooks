@@ -6,3 +6,9 @@ sudo yum install -y python-boto python-boto3
 sudo rpm -Uvh [https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm](https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm)
 sudo amazon-linux-extras install ansible2 -y # for amazon-linux2
 sudo yum install ansible -y
+
+Description of a playbook:
+- - - 
+- name: sample book      #name of the playbook
+   hosts: ansible clients   #name of the host/hosts
+   become: true        
