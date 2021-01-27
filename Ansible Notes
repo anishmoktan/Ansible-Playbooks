@@ -29,3 +29,4 @@ Description of a playbook:
 
 To check the syntax of a playbook: ansible-playbook "name of the playbook" - - syntax-check
 
+To execute a playbook: ansible-playbook "name of the playbook"
