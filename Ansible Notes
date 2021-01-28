@@ -32,3 +32,5 @@ To check the syntax of a playbook: ansible-playbook "name of the playbook" - - s
 To execute a playbook: ansible-playbook "name of the playbook"
 
 To see any modules: ansible-doc "name of the module"
+
+To verify Ansible version: ansible - -version
