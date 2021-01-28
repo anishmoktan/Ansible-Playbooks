@@ -52,3 +52,4 @@ ansible all -m stat *path of the file* (status of a file)
 ansible all -m yum "name=*what you want to install*" (to install an package)
 
 ansible all -m user -a "name=*name of the user"* -b *(to set a user)*
+
