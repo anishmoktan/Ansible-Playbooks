@@ -34,3 +34,13 @@ To execute a playbook: ansible-playbook "name of the playbook"
 To see any modules: ansible-doc "name of the module"
 
 To verify Ansible version: ansible - -version
+
+To connect Master node EC2 to Host node EC2 for Ansible:
+ssh-keygen -t rsa
+Press Enter a couple of times
+cat .ssh/id_rsa.pub #public key
+Copy the public key
+SSH to the host
+(Host) vi .ssh.authorized_keys
+(Host) Paste the copied code at the end of the lines)
+(Host) 
