@@ -53,3 +53,6 @@ ansible all -m yum "name=*what you want to install*" (to install an package)
 
 ansible all -m user -a "name=*name of the user"* -b *(to set a user)*
 
+ansible all -m setup (to see the setup info)
+
+ansible all -m ping (to see the internet connection)
