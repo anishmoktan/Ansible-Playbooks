@@ -56,3 +56,7 @@ ansible all -m user -a "name=*name of the user"* -b *(to set a user)*
 ansible all -m setup (to see the setup info)
 
 ansible all -m ping (to see the internet connection)
+
+ansible-vault create *name of file* (to put a password to a file)
+
+ansible-vault view *name of file* (to view a password protected file)
