@@ -65,4 +65,4 @@ ansible-vault edit *name of file* (to edit a password protected file)
 
 ansible-vault decrypt *name of file* (to decrypt a password protected file)
 
-ansible- vault
+ansible- vault view all
